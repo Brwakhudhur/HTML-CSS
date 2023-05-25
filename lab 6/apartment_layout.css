@@ -1,0 +1,78 @@
+ header {
+   text-align: center;
+ }
+
+ nav li {
+   list-style: none;
+   display: inline;
+   margin-left:1em; }
+   
+  header {
+   text-align: center;
+    }
+
+ nav li {
+   list-style: none;
+   display: inline;
+   margin-left:1em;
+   border-left: 2px solid;
+   padding-left: 4px;
+ }
+
+ nav li:first-child {
+   border-left:none;
+ }
+
+ table, tr, th {
+   border: 1px solid black;
+   border-collapse: collapse;
+ }
+
+ tbody tr th {
+   padding: 10px;
+   text-align: left;
+   font-weight: lighter;
+ }
+
+
+ thead th {
+   background-color:grey;
+   color: white;
+   padding: 10px;
+   text-align: left;
+ }
+
+ tbody td:last-of-type {
+   padding: 5px;
+   text-align: left;
+
+ }
+
+ tbody tr:last-child {
+   background-color: lightgreen;
+   color: white;
+ }
+
+
+ h2 {
+   color: black;
+   background-color: orange;
+   padding: 3px;
+   text-align:
+     center;
+ }
+
+ h3 {
+   color: black;
+   background-color: orange;
+   padding: 5px;
+   text-align: left;
+ }
+
+ main {
+   text-align: center;
+ }
+
+
+
+ 

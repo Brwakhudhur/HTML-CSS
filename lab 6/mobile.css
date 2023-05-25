@@ -1,0 +1,29 @@
+
+@media only screen and (max-width:600px) {
+
+.location img {
+  display: none;
+}
+nav li {
+  display:block;
+  border-left: none;
+}
+header img,p{
+  display: none;
+}
+.Gallery{
+  display: flex;
+  flex-flow: column;
+  
+  
+  
+}
+.Gallery h3 {
+width: 50%;
+}
+
+
+
+
+  
+}

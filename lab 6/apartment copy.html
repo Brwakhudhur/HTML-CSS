@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--000780773-->
+  <!--Brwa khudhur -->
+  <title>Sandy and Leslie's apartment</title>
+  <link rel="stylesheet" href="apartment_layout.css" type="text/css">
+  <link rel="stylesheet" href="mobile.css" type="text/css">
+  <link rel="stylesheet" href="apartmentprint.css" media="print">
+  <style media="screen">
+  table{
+    height: 40%;
+  }
+
+
+  main{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1.2fr;
+    grid-gap: 1em;
+  }
+  .location{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .location img {
+    width:100%;
+  }
+  
+  table{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .Welcome{
+    grid-row: 1;
+    grid-column: 3;
+    text-align: left;
+    
+  }
+  .btn{
+    margin: 1em;
+  }
+  .btn input{
+    margin: 5px;
+    padding: 5px;
+  }
+  .Gallery{
+  
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+  .bk img{
+    height:150px;
+    width: 150px;
+    
+  }
+  h3 {
+    background-color: skyblue;
+    padding: 3px;
+  }
+  .bk{
+    margin: 2em;
+  }
+  
+  
+   footer{
+     text-align: center;
+     font-size: 16px;
+   }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sandy and Leslie's Apartment</h1>
+    <p>Click a Room for detailed View</p>
+    <img usemap="#Condo" src="apartmentfloorplan.jpg" alt="Condo image">
+    <map name="Condo">
+      <area shape="rect" coords="62,13,201,161" href="bedroom.html" alt="Bedroom" title="Bedroom 1">
+      <area shape="poly" coords="222,15,400,15,396,129,353,173,228,163" href="livingroom.html"
+        alt="Living room" title="livingroom">
+      <area shape="rect" coords="418,273,591,461" href="#" alt="" title="Bedroom 2">
+      <area shape="circle" coords="479,223,50" href="dining.html" alt="dining room" title="Dining">
+      <area shape="rect" coords="226,241,405,295" href="livingroom.html" alt="living room "
+        title="living area">
+      <area shape="default" coords="" href="#" alt="">
+
+    </map>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Apartment</a>
+        </li>
+        <li>
+          <a href="#">Bedroom 1</a>
+        </li>
+        <li>
+          <a href="#">Bedroom 2</a>
+        </li>
+        <li>
+          <a href="#">Dining Room</a>
+        </li>
+        <li>
+          <a href="#">Kitchen</a>
+        </li>
+        <li>
+          <a href="#">Living Room</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <table>
+      <caption> <h2>Apartment Servics:</h2>
+</caption>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Day/Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Gym</th>
+          <td rowspan="2"> Monday-Friday 6am - 10pm
+            <br> Saturday 8am - 8pm
+            <br> Sunday 8am - 5p
+          </td>
+
+        </tr>
+        <tr>
+          <th>Pool</th>
+
+        </tr>
+        <tr>
+          <th>Laundry</th>
+          <td>24/7</td>
+        </tr>
+        <tr>
+          <td colspan="2">Please do not allow people you do not know to use these facilites</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="location">
+      <h2>location</h2>
+      <img src="location.png" alt="">
+
+    </div>
+    <div class="Welcome">
+      <h2>Welcome Message</h2>
+      <audio src="apartment.mp3" controls>
+      </audio>
+
+        <p>
+          Transcript: Hello. Welcome to our apartment. You’ll really enjoy living here. The rooms are spacious
+          and the apartment building amenities are fantastic. We look forward to
+          hearing from you!</p>
+          <form class="" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post">
+            <input type="hidden" name="formname" value="Brwa Khudhr">
+
+            <h2>Survey</h2>
+            <p>How did you find about this apartment? Check any that apply:</p>
+            <input type="checkbox" name="web" value="web">
+            <label for="web">Web search</label>
+            <input type="checkbox" name="Friend" value="Friend">
+            <label for="Friend">Friend</label>
+            <input type="checkbox" name="News Paper" value="News">
+            <label for="News">Newspaper</label> <br>
+            <div class="btn">
+              <input type="submit" name="" value="Submit">
+              <input type="reset" name="" value="Reset Form">
+            </div>
+            
+          </form>
+
+
+    </div>
+    
+  </main>
+  <h2>Gallery</h2>
+
+
+    <div class="Gallery">
+      
+
+    <div class="bk">
+      <h3>Kitchen</h3>
+      <img src="1.jpg" alt="">
+      
+    </div>
+    <div class="bk">
+      <h3>Living Room</h3>
+      <img src="2.jpg" alt="">
+      
+    </div>
+    <div class="bk">
+      <h3>Balcony</h3>
+      <img src="3.jpg" alt="">
+      
+    </div>
+    
+    <div class="bk">
+      <h3>Bedroom</h3>
+      <img src="4.jpg" alt="">
+      
+    </div>
+    <div class="bk">
+      <h3>Dining Room</h3>
+      <img src="5.jpg" alt="">
+      
+    </div>
+    <div class="bk">
+      <h3>BathRoom</h3>
+      <img src="6.jpg" alt="">
+      
+    </div>
+    
+    
+    
+    </div>
+
+  
+  <footer>
+  <p>For more information: <a href="sandyandleslie@example.com">sandyandleslie@example.com</a> or <a href="tell:(905) 555 1234">(905) 555 1234 </a></p>
+  <p>&copy Sandy and Leslie 2020</p>
+  </footer>
+
+
+</body>
+
+</html>
