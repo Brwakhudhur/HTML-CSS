@@ -1,0 +1,334 @@
+<style media="screen">
+
+
+*{
+margin: 0;
+padding: 0; 
+}
+header {
+  
+  display: grid;
+  grid-template-columns: minmax(200px,1fr) 1.5fr 1fr;
+}
+
+#logo2 {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+}
+
+#social {
+  grid-row: 1;
+  grid-column: 1;
+  align-self:center;
+  text-align: left;
+}
+
+#social li {
+  display: inline;
+}
+
+#tabs {
+  grid-row: 1;
+  grid-column: 3;
+  align-self:center;
+  justify-self: end;
+
+
+}
+
+#tabs li {
+  display: inline;
+  background-color: #0172BA;
+  color: white;
+  font-size: 15px;
+  border-radius: 14px;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-right: 1em;
+  
+}
+#tabs li:hover{
+  background-color: #089247;
+}
+
+nav {
+  border-top: solid 1.5px #0172BA;
+  border-bottom: solid 1.5px #0172BA;
+  background-color: #ECF7FE;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  
+}
+
+nav li {
+  border: solid 2px #0172BA;
+  color: #0172BA;
+  display: inline;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-left: 1.3em;
+  font-size: 18px;
+
+}
+nav li:hover{
+  background-color: #003557;
+}
+main {
+  display: grid;
+  grid-template-columns: 0.9fr 2fr 1fr;
+  grid-gap: 1em;
+  width: 80%;
+  margin-left: 13em; 
+}
+
+
+#canoeing {
+  grid-row: 1;
+  grid-column: 1;
+  padding-left: 7em;
+}
+
+#hiking {
+  grid-row: 1;
+  grid-column: 2; 
+}
+
+#hikingMG1 {
+  float: left;
+  padding-right:0.5em;
+}
+
+#hikingMG2 {
+  float: right;
+}
+
+.Trails {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #CEECFE;
+  border: solid black 1px;
+  width: 600px;
+  margin-top: 1em;
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 1em;
+  margin-left: 3em;
+  
+}
+.Trails li {
+  font-size: 14px;
+
+}
+
+
+.Trail1 {
+  grid-row: 1;
+  grid-column: 1 /span2;
+  align-self: center;
+  justify-self: center;
+}
+
+.Trail2 {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
+  
+}
+
+
+.Trail3 {
+  grid-row: 2;
+  grid-column: 1;
+  border-right: solid black 0.18em;
+  margin-left: 1em;
+  }
+  
+.Trail3 p {
+  font-size: 16px;
+  font-weight: bold;
+
+  
+}
+.Trail2 p {
+  font-size: 16px;
+  font-weight:bold;
+
+}
+
+h4 {
+  font-size: 1.10em;
+  font-weight: bold;
+}
+
+#Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1em;
+  justify-content: flex-start; 
+}
+
+
+.brwa {
+  height:150px;
+  width: 150px;
+  border: 1px solid black;
+  margin: 4px;
+
+  
+}
+
+#aside1 {
+  grid-row: 1;
+  grid-column: 3;
+  padding-left: 1em;
+  padding-top: 11px;
+    }
+
+#aside1 img {
+  padding-bottom: 3em;
+}
+
+#last {
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  border-top: 1.5px solid #0172BA;
+  border-bottom: 1.5px solid #0172BA;
+  margin-left: 3em;
+}
+
+#last h5 {
+  text-align: center;
+}
+
+
+.topics {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: bolder;
+  font-size: 19px;
+  background-color: #0172BA;
+  color: white;
+  text-align: center;
+  
+}
+
+
+footer {
+  background-color: #ECF7FE;
+  border-top: 1.5px solid #0172BA;
+  border-bottom: 1.5px solid #0172BA;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr;
+  margin-bottom:2em;
+  line-height:20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+footer p {
+ font-weight: bold;
+ font-size: 18px;
+}
+#footerimg{
+  grid-row: 1 ;
+  grid-column: 1;
+    }
+  
+  #About {
+  
+    grid-row: 1;
+    grid-column: 2;
+
+    }
+#About ul {
+  margin-right: 1.5em;
+border-top: 2px solid #0172BA;
+list-style-type: none;
+}
+
+
+#photos {
+  grid-row: 2;
+  grid-column: 2;
+}
+#photos ul {
+  border-top:2px solid #0172BA;
+  list-style-type: none;
+  margin-right: 1.5em;
+
+}
+#Reviews {
+
+  grid-row:1;
+  grid-column: 3;
+}
+
+#Reviews ul {
+  border-top: 2px solid #0172BA;
+  list-style-type: none;
+  margin-right: 1.5em;
+
+
+}
+
+#Travel  {
+
+  grid-row:2;
+  grid-column: 3;
+}
+#Travel ul {
+  border-top: 2px solid #0172BA;
+  list-style-type: none;
+  margin-right: 1.5em;
+
+}
+
+#Seminars {
+
+  grid-row:1;
+  grid-column: 4;
+  
+}
+
+
+#Seminars ul {
+  border-top: 2px solid #0172BA;
+  list-style-type: none;
+  margin-right: 1.5em;
+
+
+  
+}
+#Events {
+  
+  grid-row:2;
+  grid-column: 4;
+}
+
+#Events ul{
+  border-top: 2px solid #0172BA;
+  list-style-type: none;
+  margin-right: 1.5em;
+
+}
+#Shop  {
+  
+  grid-row:1;
+  grid-column: 5;
+}
+#Shop ul {
+  border-top: 2px solid #0172BA;
+  list-style-type: none;
+  
+}
+
+
+  
+  
+
+
+</style>
