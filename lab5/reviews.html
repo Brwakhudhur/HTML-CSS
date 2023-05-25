@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Author: Brwa khudhur 000780773 -->
+    <title>Outdoor Adventure Reviews</title>
+
+    <link href="adventurs.css" rel="stylesheet" type="text/css" >
+    <link href="mobile.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="printstyles.css" media="print">
+
+    <style media="screen">
+  
+    
+   
+  
+      nav{
+        margin-bottom: 2em;
+        text-align:center;
+      }
+    
+    
+    nav li {
+      display: inline;
+    }
+  
+      
+      nav a {
+        
+        color: white;
+        background-color: #A8AABC;
+        padding: 1em 2em 1em 2em;
+        margin: 1em;
+        border-top:2px solid black;
+        border-top-right-radius: 9px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        text-decoration: none;
+
+
+
+      }
+      form {
+        background-color: #40538C;
+        width: 80%;
+        margin-left: 70px;
+        margin-right: 50px;
+        padding: 1.5em;
+        border: 2px solid black;
+      }
+      fieldset{
+        color: white;
+        border-color: white;
+        border: 3px white solid;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+      
+      }
+    
+      #phone,#lname,#email,#fname,#buttons input {
+          background:#FFFFE6;
+        
+      }
+      
+    
+      legend {
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 0 8px;
+      }
+      #Province,#Days{
+        margin-bottom: 1em;
+        margin-left: 10px;
+      }
+      #Frating{
+        margin-left: 4px;
+      }
+      #stars{
+        padding-left: 4px;
+      }
+    
+    
+      #textarea{
+        padding-left: 1em;
+      }
+      .second{
+        padding-left: 4px;
+      }
+  
+      .optional2{
+        width: 130px;
+				margin-right: 10px;
+				display: inline-block;
+				margin-bottom: 5px;
+        padding-left: 4em;
+         }
+      #optional input {
+        border: 1px solid darkred;
+        
+      }
+      .season{
+        padding-left: 5px;
+      
+      }
+  
+      .btn{
+      padding: 5px 2px 5px 2px;
+      font-weight: bold;
+      }
+      .screen img {
+        width: 90%;
+        height: 350px;
+        
+      }
+      .screen{
+        margin-top: 1em;
+        text-align: center;
+      }
+      h3,h4
+      {
+        padding-left: 6px;
+        font-weight: lighter;
+      }
+      .phem{
+        padding-left: 2em;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Outdoor Adventrue Trip Reviews</h1>
+      <h2>2020/2021</h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li> <a href="#">Travel</a> </li>
+        <li><a href="#">Photos</a> </li>
+        <li><a href="#">Shop</a> </li>
+        <li><a href="#">Reviews</a> </li>
+        <li> <a href="#">Seminars</a> </li>
+        <li><a href="#">Events</a> </li>
+        
+      </ul>
+    
+
+    </nav>
+    
+
+    <form action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post">
+      
+      <fieldset>
+        <legend> Trip Reviews</legend>
+        <select id="Province" name="Province">
+          <option value="Alberta Rural">Alberta Rural</option>
+          <option value="B.C.Coast">B.C.Coast</option>
+          <option value="Ontario Lake Superior">Ontario Lake Superior</option>
+          <option selected value="PEI" >PEIl</option>
+          <option value="NovaScotia Trail">NovaScotia Trail</option>
+        </select>
+        <select Id="NDays" name="Number Days">
+          <option value="5d">5 Days</option>
+          <option value="7d">7 Days</option>
+          <option value="10d">10 Days</option>
+          <option value="14d">14 Days</option>
+  </select>
+  <br>
+  <label id="Frating" >Your Rating:</label>
+<br>
+<div id="stars">
+  
+
+    <input type="radio" name="Rating" value="5">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+
+
+    <br> 
+    
+    <input type="radio" name="Rating" value="4">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+
+    <br>  
+    <input type="radio" name="Rating" value="3">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+  
+
+    <br>  
+    <input type="radio" name="Rating" value="2">
+    <img src="images/rating.jpg" alt="">
+    <img src="images/rating.jpg" alt="">
+    
+
+    <br> 
+    <input type="radio" name="Rating" value="1">
+    <img src="images/rating.jpg" alt="">
+  
+
+</div>
+
+<h3>Comments</h3>
+      <div id="textarea">
+        
+      <textarea  name="Comments"  rows="7" cols="65"></textarea>
+    </div>
+
+        </fieldset>
+      
+      <fieldset>
+        <legend>I would be interested in these Trips:(Check all that apply)</legend>
+        <div class="second">
+          
+        <input id="TripName" type="checkbox" name="Tripname" value="Sea or Lake Coost"><label for="TripName">Sea or Lake Coost</label>
+        <br>
+        <input  id="Rural" type="checkbox" name="Trip name" value="Rural"><label for="Rural">Rural</label>
+        <br>
+        <input  id="Mountains" type="checkbox" name="Trip name" value="Mountains" checked><label for="Mountains">Mountains</label>
+        <br>
+        <input  id="Others" type="checkbox" name="Trip name" value="Other(please specify)"><label for="Others">Other(please specify)</label>
+        <input   type="text" name="specify" value="">
+      </div>
+
+      
+
+      </fieldset>
+      
+      <fieldset id="optional">
+        <legend>About You (optional)</legend>
+        <h4>I usually prefer to trips this of year ( select all that apply ): </h4>
+        <br>
+        <div class="season">
+          
+        <select  name="Season"  multiple size="4">
+          <option >Winter</option>
+          <option>Spring</option>
+          <option>Summer</option>
+          <option >Fall</option>
+        </select>  
+      </div>
+
+        <div >
+					<label class="optional2" for="fname">First Name</label>
+					<input type="text" name="First name" id="fname" size="20" maxlength="20" >
+				</div>
+				<div>
+					<label class="optional2" for="lname">Last Name</label>
+					<input type="text" name="Last Name" id="lname" size="20" maxlength="20" >
+				</div>
+				<div class="phem">
+					<label  for="phone">Phone Number</label>
+					<input type="tel" id="phone" name="phonecall" placeholder="123-456-7890" size="12" maxlength="12">
+				</div>
+        <div class="phem">
+          <label  for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="name@example.com" size="40" maxlength="40" >
+          
+          
+        </div>
+        
+        
+         
+      </fieldset>
+      
+    
+      <div id="buttons">
+				<input type="submit" class="btn" value="SEND REVIEW">
+				<input type="reset" class="btn" value="CANCEL">
+			</div>
+      <div >
+        <input type="hidden" id="postId" name="Formname" value="BRWA KHUDHUR's Trip Review">
+      </div>
+    </form>
+    <div class="screen">
+      <img src="images/screen.jpg" alt="">
+
+      
+    </div>
+    <footer>
+    <img src="images/outdooradventurehorizontal.png" alt="">
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+*{
+  
+  color:black;
+  background-color: white;
+  
+  
+}
+
+
+
+@page{
+  
+}
+
+nav,footer{
+  display: none;
+}
+
+table{
+  border: none;
+}
+
+form {
+  direction:rtl;
+
+
+}

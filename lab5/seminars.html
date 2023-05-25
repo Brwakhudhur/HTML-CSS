@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Author: Brwa khudhur 000780773 -->
+
+  <title>Outdoor Adventure Seminars</title>
+  <link href="adventurs.css" rel="stylesheet" type="text/css" >
+  <link href="mobile.css" rel="stylesheet" type="text/css" >
+  <link rel="stylesheet" href="printstyles.css" media="print">
+  
+  
+  <style media="screen">
+  nav {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #A8AABC;
+    padding: 1em 2em 1em 2em;
+    border-top: 2px solid black;
+    border-top-right-radius: 9px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 1em;
+  }
+  .week {
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 80%;
+    margin-left: 7em;
+  }
+  
+  th,td {
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+    height: 40px;
+  }
+  
+  table.week thead {
+    background-color: #002759;
+    color: white;
+  }
+  
+   
+  
+  table.week thead tr {
+    height: 50px;
+  }
+  
+  table.week tbody th {
+    background-color: #DDEEFF;
+    color: black;
+  }
+  
+  table.week caption {
+    caption-side: bottom;
+    text-align: right;
+  }
+  
+  .one {
+    background-image: url(images/dust.jpg);
+    text-align: center;
+  }
+  
+  .Hiking {
+    background-color: lightgreen;
+  }
+  
+  .ong {
+    background-color: #9262af;
+  }
+  
+  .Beginner {
+    background-color: #9262af;
+    padding-right: 3em;
+  }
+  
+  .Camping {
+    background-color: #F9F871;
+  }
+  
+  .first td {
+    padding: 5px;
+    border: 0;
+  }
+  
+  .first {
+    border: 0;
+    margin-bottom: 1em;
+  }
+  
+  .long {
+    background-color: #00A5D6;
+  }
+  
+  table.first caption {
+    text-align: left;
+    margin-bottom: 2px;
+  }
+  
+  table.first {
+    width: 50%;
+    margin-left: 8em;
+  }
+  </style>
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <h1>Outdoor Adventrue Trip Reviews</h1>
+    <h2>2020/2021</h2>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Travel</a>
+      </li>
+      <li>
+        <a href="#">Photos</a>
+      </li>
+      <li>
+        <a href="#">Shop</a>
+      </li>
+      <li>
+        <a href="#">Reviews</a>
+      </li>
+      <li>
+        <a href="#">Seminars</a>
+      </li>
+      <li>
+        <a href="#">Events</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <table class="first">
+    <caption>Legend</caption>
+    <thead>
+      <tr>
+        <td class="Beginner"></td>
+        <td>Beginner Cycling</td>
+        <td class="long"></td>
+        <td>Long Distance Cycling</td>
+
+        <td class="Hiking"></td>
+        <td>Hiking</td>
+        <td class="Camping"></td>
+        <td>Camping</td>
+
+
+      </tr>
+    </thead>
+
+  </table>
+
+  <table class="week">
+    <caption>schedule is subject to change </caption>
+    <colgroup>
+      <col class="days" />
+      <col class="times" span="7" />
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>7 am-9am</th>
+        <th>9 am-11 am</th>
+        <th>11 am-12am</th>
+        <th>12pm-2pm</th>
+        <th>2pm-4pm</th>
+        <th>6pm-8pm</th>
+        <th>8pm-10pm</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>Monday</th>
+        <td class="one" colspan="7">Reserved For groups</td>
+
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td class="Hiking">Hiking</td>
+        <td class="Beginner">Beginner Cycling</td>
+        <td class="Camping" colspan="5">Camping</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td class="long" rowspan="2">Long distance Cycling Part 1</td>
+        <td></td>
+        <td class="Beginner">Beginner Cycling</td>
+        <td class="Camping" rowspan="2">Camping in Asia </td>
+        <td colspan="2" rowspan="3" class="Hiking">Hiking</td>
+        <td class="long" rowspan="2">Long distance Cycling Part 2</td>
+
+      </tr>
+
+      <tr>
+        <th>Thursday</th>
+        <td class="Camping">Camping</td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td class="Camping" rowspan="4">Camping in Europe</td>
+        <td colspan="2" class="Beginner">Beginner Cycling</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td colspan="3" rowspan="2" class="Hiking">Hiking</td>
+        <td class="Beginner">Beginner Cycling</td>
+        <td class="long" colspan="2" rowspan="2">Long distance Cycling Part 1 and 2 </td>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Holidays</th>
+        <td class="long" colspan="2">Long distance Cycling</td>
+        <td class="one" colspan="4">No Seminars</td>
+      </tr>
+    </tbody>
+
+
+
+
+
+  </table>
+  <footer>
+    <img src="images/outdooradventurehorizontal.png" alt="">
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+
+@media only screen and (max-width: 899px) {
+
+
+  li a {
+    display: center;
+    padding: 1em;
+    background-color: #A8AABC;
+    border: 1px solid black;
+    text-decoration: none;
+
+  }
+  li {
+    
+    display: block;
+    justify-self: space-around;
+  }
+}
+
+  
+
+@media only screen and (max-width: 599px) {
+
+
+
+  ul {
+    list-style-type: none;
+    width: 100%;
+
+  }
+  li a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    background-color: #A8AABC;
+    border: 1px solid black
+  }
+   
+}
+
+
+    
+
+    
